@@ -21,7 +21,6 @@ playButton.addEventListener("click", play);
 function pickRandomNum() {
     //랜덤번호 지정
     computerNum = Math.floor(Math.random()*100) + 1;
-    console.log("정답", computerNum);
 }
 
 function play() {
@@ -29,13 +28,20 @@ function play() {
     let userValue = userInput.value;
     
     if(userValue < computerNum) {
-        resultArea.textContent = "UP";
+        resultArea.textContent = "Up Up!";
 
     } else if (userValue > computerNum) {
-        resultArea.textContent = "Down";
-        
+        resultArea.textContent = "Down Down!";
+
     } else {
-        resultArea.textContent = "정답";
+        resultArea.textContent = "정답!!";
+    }
+}
+
+//엔터키 누를 때
+function enterKey(e) {
+    if(e.key == "Enter") {
+        play();
     }
 }
 

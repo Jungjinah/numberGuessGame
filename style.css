@@ -1,0 +1,32 @@
+.box {
+    border : 3px solid black;
+    border-radius: 10px;
+    width: 500px;
+    height: 200px;
+    margin: 300px auto;
+}
+
+.centerArea {
+    text-align: center;
+}
+
+.ibxArea {
+    margin-top: 10px;
+    margin-right: 5px;
+    width: 200px;
+    height: 25px;
+    font-size: 15px;
+}
+
+.buttonArea {
+    height: 30px;
+}
+
+.buttonArea:hover {
+    background-color: black;
+    color: white;
+}
+
+#result-area {
+    font-size: 30px;
+}
