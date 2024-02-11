@@ -11,7 +11,7 @@
         <h1 class="centerArea">숫자 맞추기 게임!</h1>
         <div id="result-area" class="centerArea">결과는??</div>
         <div class="centerArea">
-            <input type="number" id="user-input" class="ibxArea" onkeyup="enterKey(event)" placeholder="숫자를 입력하고 Enter!"/>
+            <input type="number" id="user-input" class="ibxArea" onkeyup="enterKey(event)" placeholder="숫자를 입력하고 Enter!" maxlength="2" oninput="numberMaxLength(this);"/>
             <button id="play-button" class="buttonArea">Go!</button>
         </div>
     </div>
